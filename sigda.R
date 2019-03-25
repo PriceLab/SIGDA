@@ -201,7 +201,7 @@ sigda <- function(
     'singular' = list(
         'scale' = est.mean,
         'pole'  = svd$d[1] / est.mean,
-        'value' = svd$d[dims]) / est.mean,
+        'value' = svd$d[dims] / est.mean),
 
     'row.scale' = rowSums(A)/n,
     'row.pole'  = svd$u[,1],
